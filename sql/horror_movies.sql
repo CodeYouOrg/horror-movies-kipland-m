@@ -9,6 +9,9 @@
 -- Get all movies that are released <=1985
 -- Get top 3 highest IMDB rating
 
-SELECT id AS "Movie_ID", name AS "Movie_Title", imdb_rating AS "Rating" FROM movies WHERE year <= 1985 AND genre = "horror"
+SELECT id AS "Movie_ID", name AS "Movie_Title", imdb_rating AS "Rating" 
+FROM movies 
+WHERE year <= 1985 
+AND genre = "horror"
 ORDER BY imdb_rating desc
 LIMIT 3
